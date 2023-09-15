@@ -1,0 +1,103 @@
+:root {
+    --white: #FFF;
+    --black: #111111;
+    --gray: #eaeaea;  
+}
+
+
+/*Global*/
+html {
+    font-size: 62.5%;   
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+/*Utilities*/
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;/*Centered content*/
+    width: 90%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+} 
+
+
+
+/*Header*/
+
+.header{
+    height: 7rem;
+  
+
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header__heading{
+    text-align: center;
+}
+
+
+
+/*Main*/
+
+.main{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*Card*/
+
+.card{
+    background-color: var(--white);
+}
+
+/*cardHeader*/
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem;
+    border-bottom: 0.2rem solid var(--gray);
+}
+
+.cardHeader__title{
+    font-weight: bold;
+}
+
+.cardHeader__number{
+    color: var(--gray);
+}
+
+/*CardMain*/
+
+
+
+
+/*CardFooter*/
+
+.cardFooter__text{
+    padding: 1.5rem;
+    text-align: justify;
+}
